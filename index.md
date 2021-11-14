@@ -1,12 +1,12 @@
-# Welcome to AWS serverless cource 
+# Welcome to AWS serverless course 
 # What is serverless computing 
 # Serverless in AWS
 # Event driven architect 
 # Serverless services 
-# Lamnda 
+# Lambda 
 # API gateway
 # SQS 
 # SNS 
-# dynamoDB
+# DynamoDB
 # Step Function 
 
