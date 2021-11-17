@@ -1,6 +1,6 @@
-[About](about.md) [About](about.md) [About](about.md) [About](about.md) [About](about.md)
 
-# Welcome to AWS serverless course 
+
+# [Welcome to AWS serverless course](about.md) 
 # What is serverless computing 
 # Serverless in AWS
 # Event driven architect 
@@ -11,4 +11,4 @@
 # SNS 
 # DynamoDB
 # Step Function 
-
+## Markdown preview
