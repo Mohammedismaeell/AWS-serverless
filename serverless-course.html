@@ -77,6 +77,38 @@
 				    <img class="img-fluid" src="assets/images/blog/serverlesscompute.jpeg" alt="image">
 				        
 				    </figure>
+				</div>	
+				<dev>
+					<h3 class="mt-5 mb-3">Page content:</h3>
+					<ul class="mb-5">
+						<li class="mb-2"><a href="serverless-course.html#1">What is serverless computing?</a></li>
+						<li class="mb-2"><a href="serverless-course.html#2">Serverless key concepts</a></li>
+						<ol class="mb-5">
+							<li class="mb-2"><a href="serverless-course.html#3">What is Function-as-a-Service (FaaS)?</a></li>
+							<li class="mb-2"><a href="serverless-course.html#4">Serverless Architecture vs. Container Architecture</a></li>
+							<li class="mb-2"><a href="serverless-course.html#5">Benefits of Serverless Architecture</a></li>
+							<li class="mb-2"><a href="serverless-course.html#6">Challenges of Serverless Architecture</a></li>
+							<li class="mb-2"><a href="serverless-course.html#7">Microservices Architecture</a></li>
+							<li class="mb-2"><a href="serverless-course.html#8">Event Driven Architecture</a></li>
+						</ol>	
+						<li class="mb-2"><a href="serverless-course.html#9">Serverless services</a></li>
+						<ol class="mb-5">
+							<li class="mb-2"><a href="./serverless-services/lambda.html">AWS Lambda</a></li>
+							<li class="mb-2"><a href="./serverless-services/fargate.html">AWS Fargate</a></li>
+							<li class="mb-2"><a href="./serverless-services/eventBridge.html">EventBridge</a></li>
+							<li class="mb-2"><a href="./serverless-services/stepFunction.html">Step Function</a></li>
+							<li class="mb-2"><a href="./serverless-services/sqs.html">SQS</a></li>
+							<li class="mb-2"><a href="./serverless-services/sns.html">SNS</a></li>
+							<li class="mb-2"><a href="./serverless-services/apiGateway.html">API Gateway</a></li>
+							<li class="mb-2"><a href="./serverless-services/appSync.html">AppSync</a></li>
+							<li class="mb-2"><a href="./serverless-services/s3.html">S3</a></li>
+							<li class="mb-2"><a href="./serverless-services/dynamoDb.html">DynamoDB</a></li>
+							<li class="mb-2"><a href="./serverless-services/rds.html">RDS Proxy</a></li>
+							<li class="mb-2"><a href="./serverless-services/aurora.html">Aurora Serverless</a></li>
+						</ol>							
+					 </ul>
+				</dev>
+				<dev id="1">
 					<h3 class="mt-5 mb-3">What is serverless computing?</h3>
 				    <p>Serverless is a cloud-native development model that allows developers to build and run applications without having to manage servers.</p>
 					<p>
@@ -85,8 +117,11 @@
 					<p>
 						Once deployed, serverless apps respond to demand and automatically scale up and down as needed. Serverless offerings from public cloud providers are usually metered on-demand through an event-driven execution model. As a result, when a serverless function is sitting idle, it doesn’t cost anything.
 					</p>
-					
-					<h3 class="mt-5 mb-3">Serverless key concepts</h3>
+				</dev>	
+				<dev id="2">	
+				<h3 class="mt-5 mb-3">Serverless key concepts</h3>
+				</dev>
+				<dev id="3">
 					<h3 class="mt-5 mb-3">1. What is Function-as-a-Service (FaaS)?</h3>
 					<p>Function-as-a-Service (FaaS) is an event-driven computing execution model where developers write logic that is deployed in containers fully managed by a platform, then executed on demand.</p>
 					<p>In contrast to BaaS, FaaS affords a greater degree of control to the developers, who create custom apps rather than relying on a library of prewritten services.
@@ -98,14 +133,15 @@
 							<li class="mb-2">Event-triggered, so they can run automatically when needed.</li>
 							<li class="mb-2">Fully managed by a cloud provider, so that you only pay for what is needed, not always-on apps and servers</li>
 						 </ul>
-
+				</dev>
+				<dev id="4">
 						 <h3 class="mt-5 mb-3">2. Serverless Architecture vs. Container Architecture</h3>
 						 <img class="img-fluid" src="assets/images/blog/2-vm-vs-container-vs-serverless.png" alt="image">
 						 <p>Both serverless and container architectures allow developers to deploy application code by abstracting away the host environment, but there are key differences between them. For example, developers who are using container architecture have to update and maintain each container they deploy, as well as its system settings and dependencies. In contrast, server maintenance in serverless architectures is handled entirely by the cloud provider. Additionally, serverless apps scale automatically, while scaling container architectures requires the use of an orchestration platform like Kubernetes.</p>
 						 <img class="img-fluid" src="assets/images/blog/microservices-on-aws.webp" alt="image">
 						 <p>Containers give developers control over the underlying operating system and runtime environment, making them suitable for applications that consistently get high traffic or as a first step in a cloud migration. Serverless functions, on the other hand, are better suited for trigger-based events such as payment processing.</p>
-					
-					
+				</dev>	
+				<dev id="5">	
 					<h3 class="mt-5 mb-3">3. Benefits of Serverless Architecture</h3>
 						 <ul class="mb-5">
 							<li class="mb-2">Cost</li>
@@ -115,7 +151,8 @@
 							<li class="mb-2">Productivity</li>		
 							<p>Engineers who use serverless can simply deploy their code without having to manage any servers, which helps accelerate delivery cycles and rapidly scale company operations.</p>		
 						 </ul>
-					
+				</dev>
+				<dev id="6">
 					 <h3 class="mt-5 mb-3">4. Challenges of Serverless Architecture</h3>
 						 <ul class="mb-5">
 							<li class="mb-2">Loss of Control</li>
@@ -130,7 +167,8 @@
 							<p>Large cloud providers like AWS offer several services—such as databases, messaging queues, and APIs—that you can use in harmony to run serverless applications. Although it’s possible to mix and match elements from different vendors, services from a single provider are designed to integrate most seamlessly.</p>
 						
 						</ul>
-					
+					</dev>
+				<dev id="7"> 				
 					<h3 class="mt-5 mb-3">5. Microservices Architecture</h3>
 						<p>
 							Microservices are an architectural pattern that structures an application as a collection of small, loosely coupled services that operate together to achieve a common goal. Because they work independently, they can be added, removed, or upgraded without interfering with other applications.
@@ -140,42 +178,43 @@
 							While there are numerous benefits to microservices architecture, like easier deployment and testing, improved productivity, flexibility, and scalability, they also pose a few disadvantages, as independently run microservices require a seamless method of communication to operate as one larger applicatio
 						</p>
 						<img class="img-fluid" src="assets/images/blog/Miceroserices-on-serverless.png" alt="image">
-					
-					
+				</dev>
+				<dev id="8">	
 					<h3 class="mt-5 mb-3">6. Event Driven Architecture</h3>
 					<p>An event-driven architecture (EDA) raises and responds to events. An event producer triggers events and these reach interested consumers, as messages, via an event channel. The producer is loosely coupled, or completely decoupled, from event recipients who process the messages asynchronously.</p>
 					<img class="img-fluid" src="assets/images/blog/event driven.png" alt="image">
 					<p>When a dedicated broker sits between the publisher and subscribers, it receives all the publishers’ events and notifies those who have registered interest in receiving them. The broker typically routes events to subscribers as they happen but in an event-streaming pattern, the broker also records events in an event stream. Event consumers access the stream at any time, perhaps reading the most recent message or batch processing a series of them from the last time they checked the stream.</p>
 					<img class="img-fluid" src="assets/images/blog/serverless-event.png" alt="image">
-
+				</dev>
+				<dev id="9">
 					<h3 class="mt-5 mb-3">Serverless services</h3>
 					<p>AWS offers technologies for running code, managing data, and integrating applications, all without managing servers. Serverless technologies feature automatic scaling, built-in high availability, and a pay-for-use billing model to increase agility and optimize costs. These technologies also eliminate infrastructure management tasks like capacity provisioning and patching, so you can focus on writing code that serves your customers. Serverless applications start with AWS Lambda, an event-driven compute service natively integrated with over 200 AWS services and software as a service (SaaS) applications.</p>
 					<ol class="mb-5">
 						<li class="mb-2">Compute</li>
 						<ul class="mb-5">
-							<li class="mb-2"><a href="lambda.html">AWS Lambda</a></li>							
-							<li class="mb-2">AWS Fargate</li>
+							<li class="mb-2"><a href="./serverless-services/lambda.html">AWS Lambda</a></li>						
+							<li class="mb-2"><a href="./serverless-services/fargate.html">AWS Fargate</a></li>
 						 </ul>
 	
 						<li class="mb-2">Integration</li>
 						<ul class="mb-5">
-							<li class="mb-2">EventBridge</li>
-							<li class="mb-2">Step Function</li>
-							<li class="mb-2">SQS</li>
-							<li class="mb-2">SNS</li>
-							<li class="mb-2">API Gateway</li>
-							<li class="mb-2">AppSync</li>
+							<li class="mb-2"><a href="./serverless-services/eventBridge.html">EventBridge</a></li>
+							<li class="mb-2"><a href="./serverless-services/stepFunction.html">Step Function</a></li>
+							<li class="mb-2"><a href="./serverless-services/sqs.html">SQS</a></li>
+							<li class="mb-2"><a href="./serverless-services/sns.html">SNS</a></li>
+							<li class="mb-2"><a href="./serverless-services/apiGateway.html">API Gateway</a></li>
+							<li class="mb-2"><a href="./serverless-services/appSync.html">AppSync</a></li>
 						 </ul>
 	
 						<li class="mb-2">Data Store</li>
 						<ul class="mb-5">
-							<li class="mb-2">S3</li>
-							<li class="mb-2">DynamoDB</li>
-							<li class="mb-2">RDS Proxy</li>
-							<li class="mb-2">Aurora Serverless</li>
-						 </ul>
-	
+							<li class="mb-2"><a href="./serverless-services/s3.html">S3</a></li>
+							<li class="mb-2"><a href="./serverless-services/dynamoDb.html">DynamoDB</a></li>
+							<li class="mb-2"><a href="./serverless-services/rds.html">RDS Proxy</a></li>
+							<li class="mb-2"><a href="./serverless-services/aurora.html">Aurora Serverless</a></li>
+						 </ul>	
 					  </ol>
+					</dev> 
 				</div>
 			
 				
