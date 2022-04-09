@@ -14,18 +14,6 @@ This Bootstrap template is made by UX/UI designer [Xiaoying Riley](https://twitt
 
 If you'd like to **use the template without the attribution**, you can [buy the **commercial license** via the theme website](https://themes.3rdwavemedia.com/bootstrap-templates/popular/devblog-free-bootstrap-4-blog-template-for-developers/)
 
-#### Follow Xiaoying
-
-[Twitter](https://twitter.com/3rdwave_themes)
-
-[Facebook](https://www.facebook.com/3rdwavethemes/)
-
-[Dribbble](https://dribbble.com/Xiaoying)
-
-[Medium](https://medium.com/@3rdwave_themes)
-
-[Linkedin](https://uk.linkedin.com/in/xiaoying)
-
 
 ## Latest Version
 **v1.1** - 12 Feb 2019
